@@ -1,0 +1,15 @@
+kuma:
+  enabled: true
+
+resources:
+  limits:
+    cpu: "400m"
+    memory: "512Mi"
+
+ingress:
+  enabled: true
+  hosts:
+    - host: up.38.cc.ucll.cloud
+      paths:
+        - path: "/wiki"
+          pathType: Prefix
