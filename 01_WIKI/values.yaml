@@ -1,3 +1,4 @@
+namespace: wikijs
 replicaCount: 2
 image:
   repository: requarks/wiki
