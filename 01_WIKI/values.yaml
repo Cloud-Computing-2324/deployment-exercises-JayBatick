@@ -1,0 +1,17 @@
+replicaCount: 2
+image:
+  repository: requarks/wiki
+  tag: latest
+
+resources:
+  limits:
+    cpu: "400m"
+    memory: "512Mi"
+
+ingress:
+  enabled: true
+  hosts:
+    - host: wiki.38.cc.ucll.cloud
+      paths:
+        - path: "/wiki"
+          pathType: Prefix
